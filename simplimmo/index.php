@@ -12,11 +12,6 @@ include('__includes/02_nav.php');
 <?php include('__includes/03_search.php') ?>
 <?php
 
-$host = "mysql_service"; 
-$dbname = "Simplimmo"; 
-$username = "root"; 
-$password = "Simplon05/2024"; 
-
 
 
 try {
