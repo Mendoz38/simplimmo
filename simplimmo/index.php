@@ -10,6 +10,53 @@ include('__includes/02_nav.php');
 <div class="home-lager-shearch" style="padding-top: 25px; margin-top: -125px; padding-bottom: 60px; background-color: rgb(252, 252, 252);">
 
 <?php include('__includes/03_search.php') ?>
+<?php
+
+$host = "mysql_service"; 
+$dbname = "Simplimmo"; 
+$username = "root"; 
+$password = "Simplon05/2024"; 
+
+
+
+try {
+    // Connexion à la base de données avec PDO
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    
+    // Configurer PDO pour afficher les erreurs SQL
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+    // Exécuter des requêtes SQL...
+    
+    // Par exemple, sélectionner toutes les lignes d'une table
+    $query = $pdo->query("SELECT * FROM users");
+    $result = $query->fetchAll(PDO::FETCH_ASSOC);
+    
+    // Exécuter une requête d'insertion
+    $stmt = $pdo->prepare("INSERT INTO users (name) VALUES (:name)");
+    $stmt->bindParam(':name', $name);
+    
+    // Paramètres de la nouvelle ligne
+    $name = "zzzz";
+    
+    // Exécution de la requête
+    $stmt->execute();
+    
+    // Afficher le nombre de lignes insérées
+    $count = $stmt->rowCount();
+    var_dump($count);
+    
+} catch (PDOException $e) {
+    // Gérer les erreurs de connexion
+    echo "Erreur de connexion à la base de données : " . $e->getMessage();
+}
+
+
+
+//$pdo = new PDO('mysql:host='.$host_name2.';dbname='.$database2.';charset=utf8', $user_name2, $password2, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));		
+//$count = $pdo->exec('INSERT INTO users SET name="zzzz" ');
+//var_dump($count)
+?>
 
         </div>
 

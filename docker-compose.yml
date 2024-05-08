@@ -13,8 +13,8 @@ services:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_LOG_BIN: mysql-bin
-    #ports:
-    #  - "3307:3306"
+    ports:
+      - "3307:3306"
     volumes:
       - ./data/mysql:/var/lib/mysql
       - ./data/conf:/etc/mysql/conf.d
@@ -58,7 +58,6 @@ services:
       - ./simplimmo:/var/www/html
     networks:
       - simplon_network
-
 
 volumes:
   mysql_service:
