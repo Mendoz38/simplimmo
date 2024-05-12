@@ -1,0 +1,9 @@
+{
+    "name": "admin/simplimmo",
+    "autoload": {
+        "psr-4": {
+            "Simplimmo\\": "src/classes/"
+        }
+    },
+    "require": {}
+}
