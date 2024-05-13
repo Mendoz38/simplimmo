@@ -1,5 +1,5 @@
 {
-    "name": "admin/simplimmo",
+    "name": "admin/public",
     "autoload": {
         "psr-4": {
             "Simplimmo\\": "src/"

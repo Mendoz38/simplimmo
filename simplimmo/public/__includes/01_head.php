@@ -36,6 +36,7 @@ include('config/bd.php');
     <link rel="stylesheet" href="assets/css/lightslider.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/perso.css">
 </head>
 
 <body>

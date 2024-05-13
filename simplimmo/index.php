@@ -1,3 +1,4 @@
+<a href="public/" style="display:block; text-align:center;">Aller sur le site</a>
 <?php
 require 'vendor/autoload.php';
 
@@ -6,17 +7,20 @@ use Simplimmo\Maison ;
 use Simplimmo\DBConfig;
 
 
+$db = new DBConfig();
+$db->connect();
+//$bien_1->create();
+//var_dump($bien_1)
+?>
+<?php
+
+
 $bien_1 = new BienImmobilier(
     surface: "80",
     prix: "120",
     localisation: "ici",
     nbr_piece: "2"
 );
-$db = new DBConfig();
-$db->connect();
-//$bien_1->create();
-//var_dump($bien_1)
-
 echo "La surface est de " . $bien_1->getSurface() . " m² <br />";
 
 echo "Prix : " . $bien_1->getPrix() . "€ <br />";

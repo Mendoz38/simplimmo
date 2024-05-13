@@ -9,10 +9,11 @@
                 </div>
                 <div class="bottom-menu pull-right">
                     <ul>
-                        <li><a class="wow fadeInUp animated" href="#" data-wow-delay="0.2s">Home</a></li>
-                        <li><a class="wow fadeInUp animated" href="#" data-wow-delay="0.3s">Property</a></li>
+                        <li><a class="wow fadeInUp animated" href="index.php" data-wow-delay="0.2s">Accueil</a></li>
                         <li><a class="wow fadeInUp animated" href="#" data-wow-delay="0.4s">Faq</a></li>
-                        <li><a class="wow fadeInUp animated" href="#" data-wow-delay="0.6s">Contact</a></li>
+                        <li><a class="wow fadeInUp animated" href="contact.php" data-wow-delay="0.6s">Contact</a></li>
+                        <li><a class="wow fadeInUp animated" href="register.php" data-wow-delay="0.3s">Register</a></li>
+                        <li><a class="wow fadeInUp animated" href="login.php" data-wow-delay="0.3s">Login</a></li>
                     </ul>
                 </div>
             </div>

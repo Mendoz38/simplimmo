@@ -24,10 +24,10 @@
                     </div>
                     <div class="form-group">
                         <select id="basic" class="selectpicker show-tick form-control">
-                            <option> -Status- </option>
-                            <option>Rent </option>
-                            <option>Boy</option>
-                            <option>used</option>
+                            <option> -Maison / Appartement- </option>
+                            <option>Maison</option>
+                            <option>Appartement</option>
+                            <option>Garage</option>
 
                         </select>
                     </div>
