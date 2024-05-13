@@ -18,7 +18,6 @@ class Register_model
 
     public function validateFormData($formData)
     {
-
         if (isset($formData['name']) && isset($formData['mail']) && isset($formData['password'])) {
             return true; 
         } else {
@@ -41,7 +40,6 @@ class Register_model
         }
     }
 
-
     public function insertUser($userData)
     {
         try {
@@ -59,7 +57,6 @@ class Register_model
             $stmt->bindParam(':date_modif', $userData['date_modif']);
 
             $stmt->execute();
-
             return true;
         } catch (PDOException $e) {
             // A faire, gérer l'erreur d'insertion

@@ -32,8 +32,8 @@ class Register_controller
         }
 
         if ($success) {
-            //echo "<script>window.location.href = 'success.php';</script>";
-            echo "SUUUUCCCCEEEESSSSS";
+            echo "<script>window.location.href = 'success.php';</script>";
+            //echo "SUUUUCCCCEEEESSSSS";
             exit();
         } else {
             echo "Echec de l'enregistrement";
