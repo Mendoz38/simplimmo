@@ -29,7 +29,6 @@ include('__includes/02_nav.php');
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {  // si le formulaire a été soumis
             $loginController->processForm();
-        } else {  // Afficher le formulaire de contact
             $loginController->showForm();
         }
         ?>
